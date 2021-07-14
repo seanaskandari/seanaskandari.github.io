@@ -3,10 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Webpage</title>
+    <title>My Portfolio | Responsive Website Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<h1>Sean Askandari</h1>
 <body>
-    <p>Hello World</p>
+    <header>
+        <a href="#" class="logo">Portfolio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div class="textBx">
+            <h2>Hello, I'm<br><span>Sean Askandari.</span></h2>
+            <h3>I'm a Front End Web Developer.</h3>
+            <a href="#" class="btn">About Me</a>
+        </div>
+    </section>
+    <section class="about">
+        <div class="heading">
+            <h2>About Me</h2>
+        </div>
+        <div class="content">
+            <div class="contentBx w50">
+                <h3>I'm a Front End Web Developer.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur similique laboriosam nam iste labore molestias quisquam doloremque, culpa voluptas facere aut temporibus necessitatibus, debitis nobis! Reiciendis, dolor tenetur! Animi, quo?<br><br>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor suscipit explicabo similique, nihil ipsa officiis enim? Ipsa omnis, ut dolore dolorem optio iusto at sequi iure illo deleniti! Dignissimos, dolor.</p>
+            </div>
+        </div>
+        <div class="w50">
+            <img src="sean_headshot1.jpg" class="img">
+        </div>
+    </section>
+    <script type="text/javascript">
+    window.addEventListener('scroll', function(){
+        var header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
+    });
+    </script>
 </body>
 </html>
